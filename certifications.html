@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="author" content="Alexander Murdock">
+      <meta name="description" content="Alexander Murdock is a Freelance Web Developer with 8 industry certficiations and experince Desinging and Developeing many diffrent projects in various diffrent languages including JavaScript, PHP, WordPress, CSS and HTML.">
+      <link rel="icon" href="icons/fav-icon.png">
+
+      <title>Alexander Murdock</title>
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="css/style.css">
+
+      <!-- bootstrap cdns -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <!-- google fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+      <!-- terminal effect -->
+      <script src="js/t.min.js"></script>
+
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="css/animate.css">
+      <script src="js/wow.min.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <span id="brand">
+                  <a href="index.html">Alexander Murdock</a>
+                  <p>Freelance Web Development</p>
+            </span>
+
+            <ul id="menu">
+                  <li><a href="index.html">home<span>.</span></a></li>
+                  <li><a href="work.html">work<span>.</span></a></li>
+                  <li><a href="certifications.html" id="active-selector" class="">certifications<span>.</span></a></li>
+                  <li><a href="about.html">about me<span>.</span></a></li>
+                  <li><a href="contact.html">contact<span>.</span></a></li>
+            </ul>
+
+            <div id="toggle">
+                  <div class="span">menu</div>
+            </div>
+
+      </nav>
+
+      <div id="resize">
+            <div class="close-btn">close</div>
+
+            <ul id="menu">
+                  <li><a href="index.html" id="active-selector" class="">home<span>.</span></a></li>
+                  <li><a href="work.html">work<span>.</span></a></li>
+                  <li><a href="certifications.html">certifications<span>.</span></a></li>
+                  <li><a href="about.html">about me<span>.</span></a></li>
+                  <li><a href="contact.html">contact<span>.</span></a></li>
+            </ul>
+      </div>
+    </div>
+
+    <script>
+        document.getElementById('active-selector').className = 'active-page';
+    </script>
+</body>
+</html>
