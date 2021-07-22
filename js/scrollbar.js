@@ -4,3 +4,8 @@ window.onscroll = function () {
     let scrollAmount = (windowScroll / windowHeight) * 100;
     document.getElementById("mybar").style.width = scrollAmount + "%";
   };
+
+var whatPage = document.title;
+if (whatPage == "Alexander Murdock"){
+    console.log('we got it')
+}
