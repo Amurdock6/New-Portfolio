@@ -90,6 +90,7 @@ a{
       z-index: 1;
       position: fixed;
     }
+
     .progress-bar {
       height: 10px;
       background-color: #fff !important;
@@ -240,7 +241,7 @@ h6 {
 }
 
 .project3 {
-      background: url(../images/projects/old_portfolio1.jpg) no-repeat 50% 50%;
+      background: url(../images/projects/old_portfolio.jpg) no-repeat 50% 50%;
       background-size: cover;
 }
 
@@ -263,7 +264,7 @@ h6 {
 }
 
 .project4::after {
-      content: "e46 finder";
+      content: "e46 finder.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;

@@ -18,6 +18,12 @@ nav #brand p {
     margin-top: -4.5vh;
 }
 
+@media screen and (max-width: 600px){
+    nav #brand p{
+        margin-top: -7vh;
+    }
+}
+
 nav #brand a {
     color: #fff;
     transition: all 0.3s ease-out;
@@ -126,8 +132,8 @@ a#freelance {
 #resize #menu li {
     display: block;
     text-align: center;
-    padding: 10px 0;
-    font-size: 50px;
+    padding: 23px 42px 0px 0px;
+    font-size: 30px;
     min-height: 50px;
     font-weight: bold;
     cursor: pointer;
@@ -135,7 +141,7 @@ a#freelance {
 }
 
 #resize li:nth-child(1) {
-    margin-top: 140px;
+    margin-top: 78px;
 }
 
 #resize #menu li a {

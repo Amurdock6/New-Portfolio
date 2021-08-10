@@ -17,16 +17,86 @@
     background-size: cover;
 }
 
-/* arrow bounce */
-p .arrow-left:hover, p .arrow-right:hover{
-  animation: bounce 1.5s ease infinite;
+.image2{
+  background: url(../images/projects/old_portfolio/old_portfolio.png) no-repeat  50% 36%;
+  background-size: cover;
 }
 
-@keyframes bounce{
+.image3{
+  background: url(../images/projects/e46_finder/e46-frist-pic.jpg) no-repeat  50% 36%;
+  background-size: cover;
+}
+
+@media screen and (max-width: 600px){
+  .image{
+    background: url(../images/projects/axis/main.png) no-repeat  50% 70%;
+    background-size: cover;
+  }
+
+  .image1{
+    background: url(../images/projects/axis/main.png) no-repeat  50% 70%;
+    background-size: cover;
+  }
+
+  .image2{
+    background: url(../images/projects/old_portfolio/old_portfolio1.jpg) no-repeat  50% 70%;
+    background-size: cover;
+  }
+
+  .image3{
+    background: url(../images/projects/axis/main.png) no-repeat  50% 70%;
+    background-size: cover;
+  }
+}
+
+
+/* Image hover effect */
+.project-img .col-md-8 .project{
+  transition: 0.5s;
+}
+
+.project-img .col-md-8 .project:hover{
+    width: 44vw;
+    height: 41vh;
+    -webkit-box-shadow: 1px 2px 24px 19px #353535; 
+    box-shadow: 1px 2px 24px 19px #353535;
+    transition: 0.5s;
+  }
+
+/* arrow bounce */
+p.no-previous{
+  display: none;
+  pointer-events: none;
+}
+
+.arrow-left:hover a, .arrow-right:hover a{
+  text-decoration: none;
+}
+
+ .arrow-left:hover ion-icon{
+  animation: arrow-left 10s ease infinite;
+  color: #fff;
+}
+
+ .arrow-right:hover ion-icon{
+  animation: arrow-right 10s ease infinite;
+  color: #fff;
+}
+
+@keyframes arrow-left{
   0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%{
     transform: translateX(0);
   }
-  5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95%{
-    transform: translateX(-1vw);
+  5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%{
+    transform: translateX(-0.6vw);
+  }
+}
+
+@keyframes arrow-right{
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%{
+    transform: translateX(0);
+  }
+  5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%{
+    transform: translateX(0.6vw);
   }
 }
