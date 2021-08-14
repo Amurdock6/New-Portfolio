@@ -49,6 +49,31 @@
   }
 }
 
+/* image hover effect */
+.container .col-md-8{
+  transition: 1s;
+}
+
+.container .col-md-8:hover{
+  transition: 1s;
+}
+
+.image3, .image2, .image1, .image{
+  transition: 1s;
+}
+
+.image3:hover, .image:hover{
+  width: 1350px;
+  height: 520px;
+  transition: 1s;
+  margin-left: -75px;
+}
+
+.image2:hover, .image1:hover{
+  transition: 0.8s;
+  height: 560px;
+}
+
 /* arrow bounce */
 p.no-previous{
   display: none;
