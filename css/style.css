@@ -36,7 +36,7 @@ a{
       }
 }
 
-/*--------------- typewriter effect --------------- */
+/* typewriter effect */
 .line {
       width: 24em;
       top: 50%;
@@ -133,7 +133,7 @@ a{
       z-index: zindex-fixed;
     }
     
-/*--------------- hero section --------------- */
+/* hero section */
 .hero {
       height: 100vh;
       display: flex;
@@ -154,7 +154,7 @@ a{
       }
 }
 
-/*--------------- scroll down icon animation --------------- */
+/* scroll down icon animation */
 .scroll-down {
       position: absolute;
       left: 50%;
@@ -187,7 +187,7 @@ a{
       }
 }
 
-/*--------------- projects section --------------- */
+/* projects section */
 h6 {
       text-align: center;
 }
@@ -291,7 +291,7 @@ h6 {
       }
 }
 
-/*--------------- footer section --------------- */
+/* footer section */
 .collab {
       text-align: right;
 }
@@ -388,7 +388,7 @@ h6 {
       }
 }
 
-/*--------------- work page --------------- */
+/* work page */
 
 .hero-content {
       margin-left: 0%;
@@ -412,7 +412,7 @@ h6 {
       }
 }
 
-/*---------------about page --------------- */
+/* about page */
 
 .about {
       height: 500px;
@@ -423,7 +423,7 @@ h6 {
       background: url(../images/projects/about0.jpg) no-repeat  50% 40%;
       background-size: cover;
   }
-/*--------------- contact form --------------- */
+/* contact form */
 
 #contact-form {
       margin: 5% 1.4%;
@@ -496,7 +496,7 @@ textarea:focus {
       }
 }
 
-/*--------------- project page --------------- */
+/* project page */
 
 .prev, .next p {
       color: grey;
