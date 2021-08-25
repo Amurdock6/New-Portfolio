@@ -77,6 +77,13 @@ a#freelance {
       }
 }
 
+@media screen and (max-width: 1560px){
+    a#freelance {
+        position: relative;
+        top: -7vh;
+    }
+}
+
 /* If id equals nav change color css  */
 .active-page{
     color: #ff0000 !important;
