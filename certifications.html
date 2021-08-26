@@ -15,6 +15,9 @@
       <link rel="stylesheet" href="css/nav.css">
       <link rel="stylesheet" href="css/certifications.css">
 
+      <!-- ajax -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
       <!-- bootstrap cdns -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -92,34 +95,6 @@
             </ul>
       </div>
     </div>
-
-    <div class="info">
-      <div class="row">
-            <div class="col-lg-4" id="personal">
-                  <p class="wow fadeInUp">connect with me</p>
-                  <h4 class="wow fadeInUp" data-wow-delay="0.2s"><a href="https://www.linkedin.com/in/alexander-murdock/">ln @Alexander Murdock</a></h4>
-                  <br><br>
-            </div>
-
-            <div class="col-lg-4" id="media">
-                  <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
-
-                  <ul>
-                        <li id="gh" class="wow fadeInUp" data-wow-delay="0.4s"><a href="https://github.com/Amurdock6">gh</a></li>
-                        <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s"><a href="https://www.linkedin.com/in/alexander-murdock/">ln</a></li>
-                        <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s"><a href="https://www.instagram.com/alexander_murdock.exe/">ig</a></li>
-                  </ul>
-
-                  <br><br>
-            </div>
-
-            <div class="col-lg-4" id="address">
-                  <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
-                  <h4 class="wow fadeInUp" data-wow-delay="0.2s"><a href="mailto:alexanderrmurdock@gmail.com">alexanderrmurdock@gmail.com</a></h4>
-                  <br><br>
-            </div>
-      </div>
-    </div>
     
     <div class="container">
       <div class="hero-content">
@@ -140,24 +115,27 @@
       <div class="certificates-container">
             <div class="container0">
                   <img src="images/certificates/success.png">
-                  <img src="images/certificates/html-and-css-certificate.png">
-                  <img src="images/certificates/html5-certificate.png">
+                  <img id="html-enlarge" src="images/certificates/html-and-css-certificate.png">
+                  <img id="html5-enlarge" src="images/certificates/html5-certificate.png">
                   
             </div>
             <br>
             <div class="container1">
                   <img src="images/certificates/js-certificate.png">
-                  <img src="images/certificates/secriuty-fundamentals-certificate.png"> 
+                  <div id="js-enlarge">
+                        <img src="images/certificates/js-certificate.png" data-enlargeable>
+                  </div>
+                  <img id="secriuty-enlarge" src="images/certificates/secriuty-fundamentals-certificate.png"> 
                   <img src="images/certificates/visual-design.png">
             </div>
             <br>
             <div class="container2">
-                  
-                  <img class="img-enlargeable img-background" src="images/certificates/illustrator-certificate.png">
-                  <img src="images/certificates/photoshop-certificate.png">
-            </div>
+                  <img id="illustrator-enlarge"  src="images/certificates/illustrator-certificate.png">
+                  <!-- <img id="illustrator-enlarge" data-enlargeable src="images/certificates/illustrator-certificate.png"> -->
+                  <img id="photoshop-enlarge" src="images/certificates/photoshop-certificate.png">
+                  <!-- <img id="photoshop-enlarge" data-enlargeable src="images/certificates/photoshop-certificate.png"> -->
+            </div>  
       </div>
-
       <div class="footer">
             <div class="container">
                   <br><br>
@@ -210,6 +188,46 @@
 
     <script>
         document.getElementById('active-selector').className = 'active-page';
+    </script>
+    <script>
+          //image on click fill screen
+$('img[data-enlargeable]').addClass('img-enlargeable img-background').click(function(){
+  var src = $(this).attr('src');
+  var modal;
+  var background;
+  function removeModal(){ modal.remove(); $('body').off('keyup.modal-close'); }
+  modal = $('<div>').css({
+      background: 'RGBA(0,0,0,0) url('+src+') no-repeat center',
+      backgroundSize: 'contain',
+      width:'100%', height:'80%',
+      position:'fixed',
+      zIndex:'10000',
+      top:'10%', left:'0',
+      cursor: 'zoom-out'
+  }).click(function(){
+      removeModal(),removeBackground();
+  }).appendTo('body');
+  //handling ESC
+  $('body').on('keyup.modal-close', function(e){
+    if(e.key==='Escape'){ removeModal(); }
+  });
+
+  function removeBackground(){ background.remove(); $('body').off('keyup.background-close'); }
+  background = $('<div>').css({
+    background: 'RGBA(0,0,0,.5)',
+    backgroundSize: 'contain',
+    width:'100%', height:'100%',
+    position:'fixed',
+    zIndex:'9000',
+    top:'0', left:'0',
+    cursor: 'zoom-out'
+}).click(function(){
+}).appendTo('body');  
+//handling ESC
+$('body').on('keyup.background-close', function(e){
+  if(e.key==='Escape'){ removeBackground(); }
+});
+});
     </script>
 </body>
 </html>
