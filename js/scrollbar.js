@@ -6,6 +6,3 @@ window.onscroll = function () {
   };
 
 var whatPage = document.title;
-if (whatPage == "Alexander Murdock"){
-    console.log('we got it')
-}
