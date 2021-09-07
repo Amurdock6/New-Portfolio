@@ -415,12 +415,12 @@ h6 {
 /* about page */
 
 .about {
-      height: 500px;
+      height: 600px;
       margin-top: 120px;
 }
 
 .image {
-      background: url(../images/projects/about.jpg) no-repeat  50% 40%;
+      background: url(../images/projects/about.jpg) no-repeat  100% 100%;
       background-size: cover;
   }
 /* contact form */
