@@ -143,7 +143,7 @@ div#photoshop-enlarge img {
         padding-right: 0;
         padding-left: 0;
         align-items: center;
-        margin-bottom: 0vh;
+        margin-bottom: -5vh;
     }
 
     .container0 img,.container1 img,.container2 img{
@@ -159,7 +159,7 @@ div#photoshop-enlarge img {
         padding-right: 0;
         padding-left: 0;
         align-items: center;
-        margin-bottom: 0vh;
+        margin-bottom: -4vh;
     }
     
     .container2{
@@ -169,78 +169,11 @@ div#photoshop-enlarge img {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-top: 2vh;
+        padding-top: 0vh;
         align-items: center;
     }
 
-    /* styling for enlargeing certificates on mobile */
-    .container0-enlarge{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-right: 0;
-        padding-left: 0;
-        align-items: center;
-        margin-bottom: -33vh;
-    }
-    
-    div#html-enlarge img {
-        position: relative;
-        top: -44vh;
-        width: 80vw;
-        margin-left: -20vw;
-    }
-
-    div#html5-enlarge img {
-        margin-top: 5vh;
-        margin-left: 0vw;
-    }
-    
-    div#success-enlarge img {
-        width: 80vw;
-        margin-left: 30vw;
-        position: relative;
-        bottom: 81vh;
-    }
-    
-    .container1-enlarge{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 2vh;
-        padding-right: 0;
-        padding-left: 0;
-        align-items: center;
-        margin-bottom: -5vh;
-    }
-    
-    div#js-enlarge img {
-        margin-left: 0vw;
-    }
-    
-    div#visual-enlarge img {
-        margin-left: 0vw;
-    }
-    
     .container2-enlarge{
-        padding-right: 0;
-        padding-left: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 2vh;
-        align-items: center;
+        pointer-events: none;
     }
-    
-    div#illustrator-enlarge img {
-        margin-left: 0;
-    }
-    
-    div#photoshop-enlarge img {
-        margin-left: 0;
-    }
-
 }
