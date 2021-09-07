@@ -4,7 +4,7 @@
        $email = $_POST['email'];
        $message = $_POST['message'];
 
-        $mailTo = "business@alexanderrmurdock.com";
+        $mailTo = "a02363876@usu.edu";
         $headers = "From: ".$email;
         $txt = "Email From".$name.".\n\n".$message;
 
