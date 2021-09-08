@@ -12,6 +12,11 @@
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/nav.css">
+      <link rel="stylesheet" href="css/certifications.css">
+
+      <!-- ajax -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
       <!-- bootstrap cdns -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -20,51 +25,264 @@
       <!-- google fonts -->
       <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
-      <!-- terminal effect -->
-      <script src="js/t.min.js"></script>
-
       <!-- for on scroll animations -->
       <link rel="stylesheet" href="css/animate.css">
       <script src="js/wow.min.js"></script>
 
 </head>
 <body>
-    <div class="wrapper">
-        <nav>
-            <span id="brand">
-                  <a href="index.html">Alexander Murdock</a>
-                  <p>Freelance Web Development</p>
-            </span>
+      <div class="wrapper">
 
-            <ul id="menu">
-                  <li><a href="index.html">home<span>.</span></a></li>
-                  <li><a href="work.html">work<span>.</span></a></li>
-                  <li><a href="certifications.html" id="active-selector" class="">certifications<span>.</span></a></li>
-                  <li><a href="about.html">about me<span>.</span></a></li>
-                  <li><a href="contact.html">contact<span>.</span></a></li>
-            </ul>
+            <nav>
+                 
+                  <span id="brand">
+                        <a href="index.html">Alexander Murdock</a>
+                        <br>
+                        <a href="index.html" id="freelance">Freelance Web Development</a>
+                  </span>
 
-            <div id="toggle">
-                  <div class="span">menu</div>
+                  <ul id="menu">
+                        <li><a href="index.html">
+                              <span>.</span>
+                              <span>home</span>
+		                  <span>home</span>
+                        </a></li>
+                        
+                        <li><a href="work.html">
+                              <span>.</span>
+                              <span>work</span>
+		                  <span>work</span>
+                        </a></li>
+                        
+                        <li><a href="certifications.html">
+                              <span>.</span>
+                              <span>certifications</span>
+		                  <span>certifications</span>
+                        </a></li>
+                        
+                        <li><a href="about.html">
+                              <span>.</span>
+                              <span>about me</span>
+		                  <span>about me</span>
+                        </a></li>
+                        
+                        <li><a href="contact.html">
+                              <span>.</span>
+                              <span>contact</span>
+		                  <span>contact</span>
+                        </a></li>
+                  </ul>
+                  
+                  <div id="toggle">
+                        <div class="span">menu</div>
+                  </div>
+            </nav>
+            
+            <div id="resize">
+                  <div class="close-btn">close</div>
+
+                  <ul id="menu">
+                        <li><a href="index.html">home<span>.</span></a></li>
+                        <li><a href="work.html">work<span>.</span></a></li>
+                        <li><a href="certifications.html" id="active-selector" class="">certifications<span>.</span></a></li>
+                        <li><a href="about.html">about me<span>.</span></a></li>
+                        <li><a href="contact.html">contact<span>.</span></a></li>
+                  </ul>
             </div>
 
-      </nav>
+    <div class="container">
+      <div class="hero-content">
+            <br><br>
 
-      <div id="resize">
-            <div class="close-btn">close</div>
+            <div class="row">
+                  <div class="col-lg-8">
 
-            <ul id="menu">
-                  <li><a href="index.html" id="active-selector" class="">home<span>.</span></a></li>
-                  <li><a href="work.html">work<span>.</span></a></li>
-                  <li><a href="certifications.html">certifications<span>.</span></a></li>
-                  <li><a href="about.html">about me<span>.</span></a></li>
-                  <li><a href="contact.html">contact<span>.</span></a></li>
-            </ul>
+                        <h3 class="wow fadeInUp" data-wow-delay="1s">certifications.</h3><br>
+                        <p class="wow fadeInUp" data-wow-delay="1.2s">Within the past year I have obtained 4 Microsoft Technology Associate certifications, 3 Adobe Certified Professional certifications as well as a certification of completion for the Bottega coding foundations course.
+                        </p>
+
+                  </div>
+            </div>
       </div>
     </div>
 
+      <div class="certificates-container">
+            <div class="container0">
+                  <img src="images/certificates/success.png">
+                  <img id="html-enlarge" src="images/certificates/html-and-css-certificate.png">
+                  <img id="html5-enlarge" src="images/certificates/html5-certificate.png">
+            </div>
+            <div class="container0-enlarge">
+                  <div id="success-enlarge">
+                        <img src="images/certificates/success.png" data-enlargeable>
+                  </div>
+                  <div id="html-enlarge">
+                        <img src="images/certificates/html-and-css-certificate.png" data-enlargeable>
+                  </div>
+                  <div id="html5-enlarge">
+                        <img src="images/certificates/html5-certificate.png" data-enlargeable>
+                  </div>
+            </div>
+                  <br>
+                  <div class="container1">
+                        <img src="images/certificates/js-certificate.png">
+                        <img id="secriuty-enlarge" src="images/certificates/secriuty-fundamentals-certificate.png"> 
+                        <img src="images/certificates/visual-design.png">
+            </div>
+            <div class="container1-enlarge">
+                  <div id="js-enlarge">
+                        <img src="images/certificates/js-certificate.png" data-enlargeable>
+                  </div>
+                  <div id="secriuty-enlarge">
+                        <img src="images/certificates/secriuty-fundamentals-certificate.png" data-enlargeable>
+                  </div>
+                  <div id="visual-enlarge">
+                        <img src="images/certificates/visual-design.png" data-enlargeable>
+                  </div>
+            </div>
+            <br>
+            <div class="container2">
+                  <img id="illustrator-enlarge"  src="images/certificates/illustrator-certificate.png">
+                  <img id="photoshop-enlarge" src="images/certificates/photoshop-certificate.png">
+            </div>
+            <div class="container2-enlarge">
+                  <div id="illustrator-enlarge">
+                        <img src="images/certificates/illustrator-certificate.png" data-enlargeable>
+                  </div>
+                  <div id="photoshop-enlarge">
+                        <img src="images/certificates/photoshop-certificate.png" data-enlargeable>
+                  </div>
+            </div>
+      </div>
+      <div class="footer">
+            <div class="container">
+                  <br><br>
+
+                  <div class="collab">
+                        <div class="row">
+                              <div class="col-lg-12">
+                                    <p class="wow fadeInUp">Got an interesting project? I can help.</p>
+                              </div>
+                        </div>
+                  </div>
+
+                  <br>
+
+                  <div class="hr">
+                        <div class="row"></div>
+                  </div>
+
+                  <br><br>
+
+                  <div class="info">
+                        <div class="row">
+                              <div class="col-lg-4" id="personal">
+                                    <p class="wow fadeInUp">connect with me</p>
+                                    <h4 class="wow fadeInUp" data-wow-delay="0.2s"><a href="https://www.linkedin.com/in/alexander-murdock/">ln @Alexander Murdock</a></h4>
+                                    <br><br>
+                              </div>
+
+                              <div class="col-lg-4" id="media">
+                                    <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
+
+                                    <ul>
+                                          <li id="gh" class="wow fadeInUp" data-wow-delay="0.4s"><a href="https://github.com/Amurdock6">gh</a></li>
+                                          <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s"><a href="https://www.linkedin.com/in/alexander-murdock/">ln</a></li>
+                                          <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s"><a href="https://www.instagram.com/alexander_murdock.exe/">ig</a></li>
+                                    </ul>
+
+                                    <br><br>
+                              </div>
+
+                              <div class="col-lg-4" id="address">
+                                    <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
+                                    <h4 class="wow fadeInUp" data-wow-delay="0.2s"><a href="mailto:alexanderrmurdock@gmail.com">alexanderrmurdock@gmail.com</a></h4>
+                                    <br><br>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
     <script>
         document.getElementById('active-selector').className = 'active-page';
+    </script>
+    <script>
+          //image on click fill screen
+$('img[data-enlargeable]').addClass('img-enlargeable img-background').click(function(){
+  var src = $(this).attr('src');
+  var modal;
+  var background;
+  function removeModal(){ modal.remove(); $('body').off('keyup.modal-close'); }
+  modal = $('<div>').css({
+      background: 'RGBA(0,0,0,0) url('+src+') no-repeat center',
+      backgroundSize: 'contain',
+      width:'100%', height:'80%',
+      position:'fixed',
+      zIndex:'10000',
+      top:'10%', left:'0',
+      cursor: 'zoom-out'
+  }).click(function(){
+      removeModal(),removeBackground();
+  }).appendTo('body');
+  //handling ESC
+  $('body').on('keyup.modal-close', function(e){
+    if(e.key==='Escape'){ removeModal(); }
+  });
+
+  function removeBackground(){ background.remove(); $('body').off('keyup.background-close'); }
+  background = $('<div>').css({
+    background: 'RGBA(0,0,0,.5)',
+    backgroundSize: 'contain',
+    width:'100%', height:'100%',
+    position:'fixed',
+    zIndex:'9000',
+    top:'0', left:'0',
+    cursor: 'zoom-out'
+}).click(function(){
+}).appendTo('body');  
+//handling ESC
+$('body').on('keyup.background-close', function(e){
+  if(e.key==='Escape'){ removeBackground(); }
+});
+});
+    </script>
+    <script>
+// navigation starts here
+
+      $("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+// navigation ends here
+
+// nav animation
+
+      TweenMax.from("#brand", 1, {
+            delay: 0.4,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom("#menu li a", 1, {
+            delay: 0.4,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+      // nav animation ends
     </script>
 </body>
 </html>

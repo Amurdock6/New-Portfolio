@@ -11,6 +11,7 @@
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/nav.css">
 
       <!-- bootstrap cdns -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -30,15 +31,40 @@
             <nav>
                   <span id="brand">
                         <a href="index.html">Alexander Murdock</a>
-                        <p>Freelance Web Development</p>
+                        <br>
+                        <a href="index.html" id="freelance">Freelance Web Development</a>
                   </span>
 
                   <ul id="menu">
-                        <li><a href="index.html">home<span>.</span></a></li>
-                        <li><a href="work.html">work<span>.</span></a></li>
-                        <li><a href="certifications.html">certifications<span>.</span></a></li>
-                        <li><a href="about.html" id="active-selector" class="">about me<span>.</span></a></li>
-                        <li><a href="contact.html">contact<span>.</span></a></li>
+                        <li><a href="index.html">
+                              <span>.</span>
+                              <span>home</span>
+		                  <span>home</span>
+                        </a></li>
+                        
+                        <li><a href="work.html">
+                              <span>.</span>
+                              <span>work</span>
+		                  <span>work</span>
+                        </a></li>
+                        
+                        <li><a href="certifications.html">
+                              <span>.</span>
+                              <span>certifications</span>
+		                  <span>certifications</span>
+                        </a></li>
+                        
+                        <li><a href="about.html">
+                              <span>.</span>
+                              <span>about me</span>
+		                  <span>about me</span>
+                        </a></li>
+                        
+                        <li><a href="contact.html">
+                              <span>.</span>
+                              <span>contact</span>
+		                  <span>contact</span>
+                        </a></li>
                   </ul>
 
                   <div id="toggle">
@@ -59,16 +85,12 @@
                   </ul>
             </div>
 
-            <!--------------- hero image starts here --------------->
             <div class="container">
                   <div class="row">
                         <div class="col-lg-12 about image wow fadeInUp" data-wow-delay="1s"></div>
                   </div>
             </div>
-            <!--------------- hero image ends here --------------->
 
-
-            <!--------------- hero section starts here --------------->
             <div class="container">
                   <div class="hero-content">
                         <br><br>
@@ -77,19 +99,19 @@
                               <div class="col-lg-12">
                                     <h3 class="wow fadeInUp" data-wow-delay="1.2s">about me.</h3><br>
 
-                                    <p class="wow fadeInUp">Living with passion is what I strictly adhere to. “Always do what you love” how much ever hackneyed this sounds it holds absolutely true. That's why I travel a lot. Not for the sole reason of “loving” to travel but it helps me to get rid of the world and escape into a different dimension of my own. As I am a travel freak I love freezing the moments I relish. The art of capturing photos is something I am always fascinated by.</p>
+                                    <p class="wow fadeInUp">My name is Alexander Murdock. I am a freelance web developer located in Utah. Some of my many hobbies are building custom computers, lacrosse, basketball and oh yeah I really like cars. Especially German ones, like Porsche GT3s and BMW E46s. I am a great problem solver and a very fast learner. I love to learn new tech and am very self motivated.</p>
 
-                                    <p class="wow fadeInUp" data-wow-delay="0.2s">I am a continuous learner. Learning for me equates to exploring new ideas and growing as an individual. I just cannot imagine my life devoid of designing. I freely express my creativity and imagination by designing. And to give my passion of designing a platform I have a YouTube channel named, Codegrid.</p>
+                                    <p class="wow fadeInUp" data-wow-delay="0.2s">I taught myself how to code when I was 15 years old using HTML and CSS to create basic web pages and ever since I have been very interested in everything tech related. When I started my senior year of high school I took a college web development and design course at the Jordan Academy for Technology and Careers (JATC) where I earned 4 Microsoft Technology Associate certifications as well as 3 Adobe Certified Professional certificates. I also received a certificate of completion for the Bottega coding foundations course. As well as the many certifications I earned I also learned some very valuable skills through a few different internships for different clients I completed while attending the (JATC).</p>
+
+                                    <p class="wow fadeInUp" data-wow-delay="0.2s">Nowadays I am working on improving my back end skills and working on freelance projects while attending Utah State University for a degree in computer science.</p>
 
                               </div>
                         </div>
                   </div>
             </div>
-            <!--------------- hero section ends here --------------->
 
             <div class="whitespace"></div>
 
-            <!--------------- footer starts here --------------->
             <div class="footer">
                   <div class="container">
                         <br><br>
@@ -97,7 +119,7 @@
                         <div class="collab">
                               <div class="row">
                                     <div class="col-lg-12">
-                                          <p class="wow fadeInUp">Got an interesting project? I can help you.</p>
+                                          <p class="wow fadeInUp">Got an interesting project? I can help.</p>
                                     </div>
                               </div>
                         </div>
@@ -114,7 +136,7 @@
                               <div class="row">
                                     <div class="col-lg-4" id="personal">
                                           <p class="wow fadeInUp">connect with me</p>
-                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">ig @alexander_murdock.exe</h4>
+                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s"><a href="https://www.linkedin.com/in/alexander-murdock/">ln @Alexander Murdock</a></h4>
                                           <br><br>
                                     </div>
 
@@ -122,10 +144,9 @@
                                           <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
 
                                           <ul>
-                                                <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">gh</li>
-                                                <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">ig</li>
-                                                <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">tw</li>
-                                                <li id="yt" class="wow fadeInUp" data-wow-delay="1s">yt</li>
+                                                <li id="gh" class="wow fadeInUp" data-wow-delay="0.4s"><a href="https://github.com/Amurdock6">gh</a></li>
+                                                <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s"><a href="https://www.linkedin.com/in/alexander-murdock/">ln</a></li>
+                                                <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s"><a href="https://www.instagram.com/alexander_murdock.exe/">ig</a></li>
                                           </ul>
 
                                           <br><br>
@@ -140,8 +161,6 @@
                         </div>
                   </div>
             </div>
-
-            <!--------------- footer ends here --------------->
 
             <br><br><br><br>
 

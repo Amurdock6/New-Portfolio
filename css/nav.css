@@ -18,6 +18,12 @@ nav #brand p {
     margin-top: -4.5vh;
 }
 
+@media screen and (max-width: 600px){
+    nav #brand p{
+        margin-top: -7vh;
+    }
+}
+
 nav #brand a {
     color: #fff;
     transition: all 0.3s ease-out;
@@ -52,10 +58,6 @@ nav #menu li a {
     margin-right: 2vw;
 }
 
-nav #menu li:nth-child(3){
-    margin-right: 2vw;
-}
-
 nav #menu li a:hover {
     text-decoration: none;
 }
@@ -73,6 +75,13 @@ a#freelance {
     a#freelance {
           top: -4.5vh;
       }
+}
+
+@media screen and (max-width: 1560px){
+    a#freelance {
+        position: relative;
+        top: -7vh;
+    }
 }
 
 /* If id equals nav change color css  */
@@ -130,8 +139,8 @@ a#freelance {
 #resize #menu li {
     display: block;
     text-align: center;
-    padding: 10px 0;
-    font-size: 50px;
+    padding: 23px 42px 0px 0px;
+    font-size: 30px;
     min-height: 50px;
     font-weight: bold;
     cursor: pointer;
@@ -139,7 +148,7 @@ a#freelance {
 }
 
 #resize li:nth-child(1) {
-    margin-top: 140px;
+    margin-top: 78px;
 }
 
 #resize #menu li a {
@@ -223,4 +232,12 @@ li span:nth-child(3){
 
 nav #menu li:nth-child(3) span:nth-child(1){
     margin-left: 98px;
+}
+
+nav #menu li:nth-child(4) span:nth-child(1){
+    margin-left: 39px;
+}
+
+nav #menu li:nth-child(5) span:nth-child(1){
+    margin-left: 30px;
 }
