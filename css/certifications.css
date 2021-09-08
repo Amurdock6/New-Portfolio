@@ -176,4 +176,12 @@ div#photoshop-enlarge img {
     .container2-enlarge{
         pointer-events: none;
     }
+
+    .container1-enlarge{
+        pointer-events: none;
+    }
+
+    .container0-enlarge{
+        pointer-events: none;
+    }
 }
