@@ -6,9 +6,10 @@
 
         $mailTo = "alexanderrmurdock@gmail.com";
         $headers = "From: ".$email;
-        $txt = "Email From".$name.".\n\n".$message;
+        $txt = "Email From ".$name." sent from form on alexanderrmurdock.com";
+        $email_body = $message;
 
-       mail($mailTo, $txt, $headers);
+       mail($mailTo, $txt, $email_body, $headers);
        header("Location: ../contact.html");
    }
 ?>
