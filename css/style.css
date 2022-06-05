@@ -205,7 +205,7 @@ h6 {
 }
 
 .project1 {
-      background: url(../images/projects/axis.png) no-repeat 50% 50%;
+      background: url(../images/projects/axis-home.webp) no-repeat 50% 0%;
       background-size: cover;
 }
 
@@ -223,7 +223,7 @@ h6 {
 }
 
 .project2 {
-      background: url(../images/projects/rhs.png) no-repeat 50% 50%;
+      background: url(../images/projects/rhs.webp) no-repeat 42% 50%;
       background-size: cover;
 }
 
@@ -259,7 +259,7 @@ h6 {
 }
 
 .project4 {
-      background: url(../images/projects/e46_finder.jpg) no-repeat 50% 50%;
+      background: url(../images/projects/e46_finder.webp) no-repeat 50% 50%;
       background-size: cover;
 }
 
@@ -279,6 +279,11 @@ h6 {
       .project {
             width: 90% !important;
             margin: 14px auto;
+      }
+
+      .project4 {
+            background: url(../images/projects/e46_finder/e46-mobile.webp);
+            background-size: cover;
       }
 
       .vertical {
