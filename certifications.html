@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
       <meta name="keywords" content="Alexander Murdock, Alex Murdock, Alexander Murdock Portfolio, Alex Murdock Portfolio, Portfolio Contact form, certficiations page">
-      <meta name="description" content="The Portfolio of Alexander Murdock, Web Developer and Designer.">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,7 +9,7 @@
       <meta name="description" content="Alexander Murdock is a Freelance Web Developer with 8 industry certficiations and experince Desinging and Developeing many diffrent projects in various diffrent languages including JavaScript, PHP, WordPress, CSS and HTML.">
       <link rel="icon" href="icons/fav-icon.png">
 
-      <title>Alexander Murdock</title>
+      <title>Alexander Murdock - Certifications</title>
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="css/style.css">
@@ -40,7 +39,7 @@
                   <span id="brand">
                         <a href="index.html">Alexander Murdock</a>
                         <br>
-                        <a href="index.html" id="freelance">Freelance Web Development</a>
+                        <a href="index.html" id="freelance">Web Development and Design</a>
                   </span>
 
                   <ul id="menu">
@@ -109,11 +108,13 @@
     </div>
 
       <div class="certificates-container">
+
             <div class="container0">
-                  <img src="images/certificates/success.webp">
-                  <img id="html-enlarge" src="images/certificates/html-and-css-certificate.webp">
-                  <img id="html5-enlarge" src="images/certificates/html5-certificate.webp">
+                  <img src="images/certificates/success.webp" class="wow fadeInUp" data-wow-delay="1s">
+                  <img id="html-enlarge" src="images/certificates/html-and-css-certificate.webp" class="wow fadeInUp" data-wow-delay="1.4s">
+                  <img id="html5-enlarge" src="images/certificates/html5-certificate.webp" class="wow fadeInUp" data-wow-delay="1.8s">
             </div>
+
             <div class="container0-enlarge">
                   <div id="success-enlarge">
                         <img src="images/certificates/success.webp" data-enlargeable>
@@ -122,15 +123,17 @@
                         <img src="images/certificates/html-and-css-certificate.webp" data-enlargeable>
                   </div>
                   <div id="html5-enlarge">
-                        <img src="images/certificates/html5-certificate.webp" data-enlargeable>
+                        <img src="images/certificates/html5-certificate.webp" data-enlargeable >
                   </div>
             </div>
+
                   <br>
                   <div class="container1">
-                        <img src="images/certificates/js-cert.webp">
-                        <img id="secriuty-enlarge" src="images/certificates/secriuty-fundamentals-certificate.webp"> 
-                        <img src="images/certificates/visual-design.webp">
+                        <img src="images/certificates/js-cert.webp" class="wow fadeInUp" data-wow-delay="1.8s">
+                        <img id="secriuty-enlarge" src="images/certificates/secriuty-fundamentals-certificate.webp" class="wow fadeInUp" data-wow-delay="1.4s"> 
+                        <img src="images/certificates/visual-design.webp" class="wow fadeInUp" data-wow-delay="1s">
             </div>
+
             <div class="container1-enlarge">
                   <div id="js-enlarge">
                         <img src="images/certificates/js-cert.webp" data-enlargeable>
@@ -142,10 +145,11 @@
                         <img src="images/certificates/visual-design.webp" data-enlargeable>
                   </div>
             </div>
+
             <br>
             <div class="container2">
-                  <img id="illustrator-enlarge"  src="images/certificates/illustrator-certificate.webp">
-                  <img id="photoshop-enlarge" src="images/certificates/photoshop-certificate.webp">
+                  <img id="illustrator-enlarge"  src="images/certificates/illustrator-certificate.webp" class="wow fadeInUp" data-wow-delay="1s">
+                  <img id="photoshop-enlarge" src="images/certificates/photoshop-certificate.webp" class="wow fadeInUp" data-wow-delay="1.4s">
             </div>
             <div class="container2-enlarge">
                   <div id="illustrator-enlarge">
@@ -156,6 +160,7 @@
                   </div>
             </div>
       </div>
+
       <div class="footer">
             <div class="container">
                   <br><br>
@@ -206,85 +211,91 @@
             </div>
       </div>
 
-    <script>
-        document.getElementById('active-selector').className = 'active-page';
-    </script>
-    <script>
-          //image on click fill screen
-$('img[data-enlargeable]').addClass('img-enlargeable img-background').click(function(){
-  var src = $(this).attr('src');
-  var modal;
-  var background;
-  function removeModal(){ modal.remove(); $('body').off('keyup.modal-close'); }
-  modal = $('<div>').css({
-      background: 'RGBA(0,0,0,0) url('+src+') no-repeat center',
-      backgroundSize: 'contain',
-      width:'100%', height:'80%',
-      position:'fixed',
-      zIndex:'10000',
-      top:'10%', left:'0',
-      cursor: 'zoom-out'
-  }).click(function(){
-      removeModal(),removeBackground();
-  }).appendTo('body');
-  //handling ESC
-  $('body').on('keyup.modal-close', function(e){
-    if(e.key==='Escape'){ removeModal(); }
-  });
+      <!-- greensock cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
-  function removeBackground(){ background.remove(); $('body').off('keyup.background-close'); }
-  background = $('<div>').css({
-    background: 'RGBA(0,0,0,.5)',
-    backgroundSize: 'contain',
-    width:'100%', height:'100%',
-    position:'fixed',
-    zIndex:'9000',
-    top:'0', left:'0',
-    cursor: 'zoom-out'
-}).click(function(){
-}).appendTo('body');  
-//handling ESC
-$('body').on('keyup.background-close', function(e){
-  if(e.key==='Escape'){ removeBackground(); }
-});
-});
-    </script>
-    <script>
-// navigation starts here
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script>
+            document.getElementById('active-selector').className = 'active-page';
+            //image on click fill screen
+            $('img[data-enlargeable]').addClass('img-enlargeable img-background').click(function () {
+                  var src = $(this).attr('src');
+                  var modal;
+                  var background;
+                  function removeModal() { modal.remove(); $('body').off('keyup.modal-close'); }
+                  modal = $('<div>').css({
+                        background: 'RGBA(0,0,0,0) url(' + src + ') no-repeat center',
+                        backgroundSize: 'contain',
+                        width: '100%', height: '80%',
+                        position: 'fixed',
+                        zIndex: '10000',
+                        top: '10%', left: '0',
+                        cursor: 'zoom-out'
+                  }).click(function () {
+                        removeModal(), removeBackground();
+                  }).appendTo('body');
+                  //handling ESC
+                  $('body').on('keyup.modal-close', function (e) {
+                        if (e.key === 'Escape') { removeModal(); }
+                  });
 
-      $("#toggle").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
+                  function removeBackground() { background.remove(); $('body').off('keyup.background-close'); }
+                  background = $('<div>').css({
+                        background: 'RGBA(0,0,0,.5)',
+                        backgroundSize: 'contain',
+                        width: '100%', height: '100%',
+                        position: 'fixed',
+                        zIndex: '9000',
+                        top: '0', left: '0',
+                        cursor: 'zoom-out'
+                  }).click(function () {
+                  }).appendTo('body');
+                  //handling ESC
+                  $('body').on('keyup.background-close', function (e) {
+                        if (e.key === 'Escape') { removeBackground(); }
+                  });
+            });
+      </script>
+      <script>
+            // navigation starts here
 
-      $("#resize ul li a").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
+            $("#toggle").click(function () {
+                  $(this).toggleClass('on');
+                  $("#resize").toggleClass("active");
+            });
 
-      $(".close-btn").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
+            $("#resize ul li a").click(function () {
+                  $(this).toggleClass('on');
+                  $("#resize").toggleClass("active");
+            });
 
-// navigation ends here
+            $(".close-btn").click(function () {
+                  $(this).toggleClass('on');
+                  $("#resize").toggleClass("active");
+            });
 
-// nav animation
+            // navigation ends here
 
-      TweenMax.from("#brand", 1, {
-            delay: 0.4,
-            y: 10,
-            opacity: 0,
-            ease: Expo.easeInOut
-      })
+            // nav animation
 
-      TweenMax.staggerFrom("#menu li a", 1, {
-            delay: 0.4,
-            opacity: 0,
-            ease: Expo.easeInOut
-      }, 0.1);
+            TweenMax.from("#brand", 1, {
+                  delay: 0.4,
+                  y: 10,
+                  opacity: 0,
+                  ease: Expo.easeInOut
+            })
 
-      // nav animation ends
-    </script>
-</body>
-</html>
+            TweenMax.staggerFrom("#menu li a", 1, {
+                  delay: 0.4,
+                  opacity: 0,
+                  ease: Expo.easeInOut
+            }, 0.1);
+
+            new WOW().init();
+
+            // nav animation ends
+      </script>      
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      </body>
+      
+      </html>

@@ -27,6 +27,11 @@
   background-size: cover;
 }
 
+.image4{
+  background: url(../images/projects/cherp.webp) no-repeat  50% 36%;
+  background-size: cover;
+}
+
 @media screen and (max-width: 600px){
   .image{
     background: url(../images/projects/axis/main.png) no-repeat  50% 70%;
@@ -58,7 +63,7 @@
   transition: 1s;
 }
 
-.image3, .image2, .image1, .image{
+.image4, .image3, .image2, .image1, .image{
   transition: 1s;
 }
 
@@ -69,7 +74,7 @@
   margin-right: -75px;
 }
 
-.image2:hover, .image1:hover{
+.image4:hover, .image2:hover, .image1:hover{
   transition: 0.8s;
   height: 560px;
 }
