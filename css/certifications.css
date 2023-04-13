@@ -52,7 +52,6 @@
     height: 100%;
     z-index: 1;
     opacity: 0;
-    transition: ease-in 0.7s;
     cursor: zoom-in;
 }
 

@@ -23,7 +23,12 @@
 }
 
 .image3{
-  background: url(../images/projects/e46_finder/e46-frist-pic.jpg) no-repeat  50% 36%;
+  background: url(../images/projects/e46_finder/e46-frist-pic.webp) no-repeat  50% 36%;
+  background-size: cover;
+}
+
+.image4{
+  background: url(../images/projects/cherp/cherp.webp) no-repeat  50% 36%;
   background-size: cover;
 }
 
@@ -44,7 +49,7 @@
   }
 
   .image3{
-    background: url(../images/projects/e46_finder/e46-frist-pic.jpg) no-repeat  50% 70%;
+    background: url(../images/projects/e46_finder/e46-mobile.webp) no-repeat  50% 70%;
     background-size: cover;
   }
 }
@@ -58,18 +63,18 @@
   transition: 1s;
 }
 
-.image3, .image2, .image1, .image{
+.image4, .image3, .image2, .image1, .image{
   transition: 1s;
 }
 
 .image3:hover, .image:hover{
-  width: 1350px;
   height: 520px;
   transition: 1s;
   margin-left: -75px;
+  margin-right: -75px;
 }
 
-.image2:hover, .image1:hover{
+.image4:hover, .image2:hover, .image1:hover{
   transition: 0.8s;
   height: 560px;
 }
