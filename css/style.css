@@ -207,6 +207,7 @@ h6 {
 .project1 {
       background: url(../images/projects/axis-home.webp) no-repeat 50% 0%;
       background-size: cover;
+      cursor: pointer;
 }
 
 .project1::after {
@@ -220,11 +221,13 @@ h6 {
       left: 80%;
       right: 0;
       bottom: 0;
+      cursor: pointer;
 }
 
 .project2 {
       background: url(../images/projects/rhs.webp) no-repeat 42% 50%;
       background-size: cover;
+      cursor: pointer;
 }
 
 .project2::after {
@@ -238,11 +241,13 @@ h6 {
       left: -40%;
       right: 0;
       bottom: 0;
+      cursor: pointer;
 }
 
 .project3 {
       background: url(../images/projects/old_portfolio.jpg) no-repeat 50% 50%;
       background-size: cover;
+      cursor: pointer;
 }
 
 .project3::after {
@@ -256,11 +261,13 @@ h6 {
       left: -50%;
       right: 0;
       bottom: 0;
+      cursor: pointer;
 }
 
 .project4 {
       background: url(../images/projects/e46_finder.webp) no-repeat 50% 50%;
       background-size: cover;
+      cursor: pointer;
 }
 
 .project4::after {
@@ -273,11 +280,13 @@ h6 {
       top: 10%;
       right: 30%;
       bottom: 0;
+      cursor: pointer;
 }
 
 .project5 {
       background: url(../images/projects/cherp/cherp.webp) no-repeat 50% 50%;
       background-size: cover;
+      cursor: pointer;
 }
 
 .project5::after {
@@ -290,6 +299,26 @@ h6 {
       top: 36%;
       right: -87%;
       bottom: 0;
+      cursor: pointer;
+}
+
+.project6 {
+      background: url(../images/projects/code.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      cursor: pointer;
+}
+
+.project6::after {
+      content: "sn dev.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      display: block;
+      top: 10%;
+      right: 30%;
+      bottom: 0;
+      cursor: pointer;
 }
 
 .center {
