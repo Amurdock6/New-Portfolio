@@ -32,6 +32,16 @@
   background-size: cover;
 }
 
+.image4{
+  background: url(../images/projects/cherp/cherp.webp) no-repeat  50% 36%;
+  background-size: cover;
+}
+
+.image5 {
+  background: url(../images/projects/code.jpg) no-repeat 50% 36%;
+  background-size: cover;
+}
+
 @media screen and (max-width: 600px){
   .image{
     background: url(../images/projects/axis/main.png) no-repeat  50% 70%;
