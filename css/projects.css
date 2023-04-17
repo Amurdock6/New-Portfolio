@@ -23,7 +23,12 @@
 }
 
 .image3{
-  background: url(../images/projects/e46_finder/e46-frist-pic.jpg) no-repeat  50% 36%;
+  background: url(../images/projects/e46_finder/e46-frist-pic.webp) no-repeat  50% 36%;
+  background-size: cover;
+}
+
+.image4{
+  background: url(../images/projects/cherp/cherp.webp) no-repeat  50% 36%;
   background-size: cover;
 }
 
