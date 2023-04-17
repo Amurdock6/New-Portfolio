@@ -87,7 +87,7 @@
                   <div class="close-btn">close</div>
 
                   <ul id="menu">
-                        <li><a href="index.html">home<span>.</span></a></li>
+                        <li><a href="index.html" id="active-selector" class="">home<span>.</span></a></li>
                         <li><a href="work.html">work<span>.</span></a></li>
                         <li><a href="certifications.html">certifications<span>.</span></a></li>
                         <li><a href="about.html">about me<span>.</span></a></li>
@@ -212,7 +212,6 @@
 
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
       <script type="text/javascript">
-
       // navigation starts here
 
       $("#toggle").click(function() {
@@ -251,6 +250,9 @@
 
       new WOW().init();
 
+      </script>
+      <script>
+            document.getElementById('active-selector').className = 'active-page';
       </script>
       <script>
             window.onscroll = function() {

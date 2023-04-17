@@ -364,6 +364,15 @@ h6 {
       .project1::after, .project1_work::after, .project2::after, .project3::after, .project4::after, .project5::after, .project6::after {
             display: none;
       }
+
+      /* adds padding for mobile views */
+      .col-lg-8{
+            padding-top: 13vh;
+      }
+
+      h1.wow.fadeInUp {
+            padding-top: 10vh;
+      }
 }
 
 /* footer section */
