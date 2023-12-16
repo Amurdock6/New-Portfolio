@@ -1,0 +1,49 @@
+/* Basic styling, adjust as needed */
+.blog-posts {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .filter {
+    margin-bottom: 20px;
+  }
+  
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .post-info {
+    padding: 10px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .date {
+    font-style: italic;
+    color: #666;
+  }
+  
+  .description {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
