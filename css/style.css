@@ -329,7 +329,7 @@ h6 {
 }
 
 .project6::after {
-      content: "sn dev.";
+      content: "android race dash.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
@@ -337,6 +337,25 @@ h6 {
       display: block;
       top: 45%;
       right: 18%;
+      bottom: 0;
+      cursor: pointer;
+}
+
+.project7 {
+      background: url(../images/projects/code.jpg) no-repeat 50% 50%; /* add this as a gif */
+      background-size: cover;
+      cursor: pointer;
+}
+
+.project7::after {
+      content: "android race dash.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      display: block;
+      top: 45%;
+      left: 80%;
       bottom: 0;
       cursor: pointer;
 }
