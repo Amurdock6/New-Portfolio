@@ -114,11 +114,15 @@ div#visual-enlarge img {
 }
 
 div#illustrator-enlarge img {
-    margin-left: -18.5vw;
+    margin-left: -27.75vw;
 }
 
 div#photoshop-enlarge img {
-    margin-left: 18.5vw;
+    margin-left: 0vw;
+}
+
+div#carbonfiber img {
+    margin-left: 27.75vw;
 }
 
 @media screen and (max-width: 1550px){
