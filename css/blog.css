@@ -1,49 +1,147 @@
 /* Basic styling, adjust as needed */
 .blog-posts {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0px 10px;
+  margin: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.post img {
+  max-width: 100%;
+  max-height: 90%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.post-info {
+  padding: 10px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.date {
+  font-style: italic;
+  color: #666;
+}
+
+.description {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* blog posts thumbnails */
+.blog-post-wrapper {
+  display: flex;
+  flex-direction: row;
+  cursor: none;
+  transition: all 0.5s ease;
+  /* Adds a smooth transition for all properties */
+}
+
+.blog-post-wrapper:hover {
+  text-decoration: none;
+  background: #333;
+  padding: 10px;
+}
+
+.blog-image {
+  width: 25%;
+  margin-right: 15px;
+  align-content: center;
+}
+
+.blog-image img {
+  max-width: 100%;
+  border: #333 solid 2px;
+}
+
+.text-side {
+  width: 75%;
+}
+
+.title-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.title-area h4 {
+  font-size: 1rem;
+  color: grey;
+}
+
+.short-description {
+  padding-top: 11px;
+}
+
+.short-description p {
+  color: grey;
+}
+
+/* Style for the custom cursor */
+#custom-cursor {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  white-space: nowrap;
+  pointer-events: none;
+  overflow: hidden;
+  /* Prevents overflow of text */
+  width: 275px;
+  /* Width of the visible area */
+  transform: rotate(350deg);
+  /* Tilted 350 degrees clockwise */
+}
+
+/* Span containing the repeated text */
+#custom-cursor span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker 7s linear infinite;
+  /* Control speed with duration */
+}
+
+/* Keyframes for smooth ticker effect */
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+    /* Start at the beginning */
+    opacity: 1;
+    /* Fully visible */
   }
-  
-  .filter {
-    margin-bottom: 20px;
+
+  25% {
+    opacity: 1;
+    /* Remain visible */
   }
-  
-  .posts {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+
+  50% {
+    opacity: 1;
+    /* Fade out slightly as it scrolls left */
   }
-  
-  .post {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
+
+  75% {
+    opacity: 1;
+    /* Fully fade out as it leaves the view */
   }
-  
-  .post img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+
+  100% {
+    transform: translateX(-100%);
+    /* Scroll text fully left */
+    opacity: 1;
+    /* Reset opacity when text reappears on the right */
   }
-  
-  .post-info {
-    padding: 10px;
-  }
-  
-  h2 {
-    margin-top: 0;
-  }
-  
-  .date {
-    font-style: italic;
-    color: #666;
-  }
-  
-  .description {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #333;
-  }
-  
+}
