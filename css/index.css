@@ -1,0 +1,224 @@
+/* projects section */
+h6 {
+    text-align: center;
+}
+
+.vertical {
+    margin-top: 40px;
+    border-left: 1px solid #fff;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+}
+
+.project {
+    height: 575px;
+}
+
+.project1 {
+    background: url(../images/projects/axis-home.webp) no-repeat 50% 0%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.project1::after {
+    content: "axis realty group.";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 59%;
+    left: 80%;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.project1_work {
+    background: url(../images/projects/axis-home.webp) no-repeat 50% 0%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.project1_work::after {
+    content: "axis realty group.";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    left: -25%;
+    top: 59%;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.project2 {
+    background: url(../images/projects/rhs.webp) no-repeat 42% 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.project2::after {
+    content: "riverton high auto.";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 36%;
+    left: -40%;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.project3 {
+    background: url(../images/projects/old_portfolio.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.project3::after {
+    content: "old portfolio website.";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: -50%;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.project4 {
+    background: url(../images/projects/e46_finder.webp) no-repeat 50% 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.project4::after {
+    content: "e46 finder.";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    right: 30%;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.project5 {
+    background: url(../images/projects/cherp/cherp.webp) no-repeat 50% 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.project5::after {
+    content: "u of u cherp.";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 36%;
+    right: -87%;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.project6 {
+    background: url(../images/projects/js.webp) no-repeat 50% 50%;
+    background-size: cover;
+    cursor: pointer;
+    height: 750px;
+}
+
+.project6::after {
+    content: "ServiceNow Developer.";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 60%;
+    left: 75%;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.project7 {
+    background: url(../images/projects/ard.PNG) no-repeat 50% 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.project7::after {
+    content: "android race dash.";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 29%;
+    right: 31%;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.project.project7 {
+    height: 700px; /* Set the height to 100% of its parent container */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+}
+
+.center {
+  text-align: center;
+  padding-top: 30px;
+}
+
+@media(max-width: 768px) {
+    .project {
+          width: 90% !important;
+          margin: 14px auto;
+    }
+
+    .col-lg-8 {
+          padding-top: 86px;
+      }
+
+    .project4mobile {
+          padding-top: 0px;
+    }
+
+    .project4 {
+          background: url(../images/projects/e46_finder/e46-mobile.webp);
+          background-size: cover;
+          background-position: center;
+    }
+
+    .project7 {
+          background: url(../images/projects/ardmobile.webp);
+          background-position: center;
+    }
+
+    .vertical {
+          display: none;
+    }
+
+    .project1::after, .project1_work::after, .project2::after, .project3::after, .project4::after, .project5::after, .project6::after, .project7::after {
+          display: none;
+    }
+
+    h1.wow.fadeInUp {
+          padding-top: 10vh;
+    }
+
+
+}
