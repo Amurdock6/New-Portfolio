@@ -218,9 +218,9 @@ h6 {
         top: 100%;
         bottom: 0;
         text-align: center;
-        font-size: 28px;
+        font-size: 1.5rem;
         margin-top: 1vh;
-  }
+    }
 
     h1.wow.fadeInUp {
           padding-top: 10vh;
