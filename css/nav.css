@@ -83,7 +83,7 @@ a#freelance {
     }
 }
 
-@media (max-height: 1180px) and (max-width: 820px) and (min-height: 1100px) and (min-width: 750px) {
+@media (max-height: 1180px) and (max-width: 880px) and (min-height: 1100px) and (min-width: 750px) {
     #toggle {
         visibility: visible !important;
         opacity: 1 !important;
@@ -302,7 +302,6 @@ a#freelance {
     transform: translateX(-40%);
     text-align: center;
     display: table-cell;
-    vertical-align: center;
 }
 
 #resize #menu li {
@@ -333,7 +332,7 @@ a#freelance {
     opacity: 1;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 882px) {
     #toggle {
           visibility: visible;
           opacity: 1;
@@ -360,7 +359,7 @@ a#freelance {
     }
 }
 
-@media(min-width: 800px) {
+@media(min-width: 883px) {
     #resize {
           visibility: hidden !important;
     }
@@ -375,6 +374,27 @@ a#freelance {
 @media(max-width: 400px) {
     nav #brand {
         line-height: 75px;
+    }
+}
+
+@media(max-width: 829px) and (max-height: 829px) and (min-width: 690px) and (min-height: 690px) {
+    #resize #menu {
+        height: 90px;
+        position: absolute;
+        left: 45%;
+        transform: translateX(-40%);
+        text-align: center;
+        display: table-cell;
+    }
+}
+
+@media(max-width: 882px) and (min-width: 881px) and (min-height: 344px) and (max-height: 345px) {
+    #resize #menu {
+        left: 47%;
+    }
+
+    nav #brand {
+        line-height: 55px;
     }
 }
 

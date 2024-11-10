@@ -213,12 +213,20 @@ h6 {
     }
 
     .project1::after, .project1_work::after, .project2::after, .project3::after, .project4::after, .project5::after, .project6::after, .project7::after {
-          display: none;
-    }
+        left:0;
+        right:0;
+        top: 100%;
+        bottom: 0;
+        text-align: center;
+        font-size: 28px;
+        margin-top: 1vh;
+  }
 
     h1.wow.fadeInUp {
           padding-top: 10vh;
     }
 
-
+    .project {
+        margin-bottom: 8vh;
+    }
 }

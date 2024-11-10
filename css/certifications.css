@@ -41,6 +41,15 @@
     padding-top: 11vh;
 }
 
+.container3{
+    width: 100%;
+    padding-right: 6vw;
+    padding-left: 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 /* css for image enlarge */
 .img-enlargeable {
     position: absolute;
@@ -125,6 +134,18 @@ div#carbonfiber img {
     margin-left: 27.75vw;
 }
 
+.container3-enlarge{
+    width: 100%;
+    padding-right: 6vw;
+    padding-left: 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 11vh;
+    position: relative;
+    bottom: 21vh;
+}
+
 @media screen and (max-width: 1550px){
     .row {
         justify-content: center;
@@ -152,6 +173,10 @@ div#carbonfiber img {
     .container0 img,.container1 img,.container2 img{
         padding-bottom: 8vh;
     }
+
+    img#carbonfiber {
+        padding-bottom: 0;
+    }
     
     .container1{
         width: 100%;
@@ -174,6 +199,21 @@ div#carbonfiber img {
         justify-content: center;
         padding-top: 0vh;
         align-items: center;
+    }
+
+    .container3{
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0vh;
+        align-items: center;
+    }
+
+    .container3-enlarge{
+        pointer-events: none;
     }
 
     .container2-enlarge{

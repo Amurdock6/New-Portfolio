@@ -131,3 +131,51 @@ p.no-previous{
     transform: translateX(0.6vw);
   }
 }
+
+@media(max-width: 768px) {
+  .project {
+        width: 90% !important;
+        margin: 14px auto;
+  }
+
+  .col-lg-8 {
+        padding-top: 86px;
+    }
+
+  .project4mobile {
+        padding-top: 0px;
+  }
+
+  .project4 {
+        background: url(../images/projects/e46_finder/e46-mobile.webp);
+        background-size: cover;
+        background-position: center;
+  }
+
+  .project7 {
+        background: url(../images/projects/ardmobile.webp);
+        background-position: center;
+  }
+
+  .vertical {
+        display: none;
+  }
+
+  .project1::after, .project1_work::after, .project2::after, .project3::after, .project4::after, .project5::after, .project6::after, .project7::after {
+        left:0;
+        right:0;
+        top: 100%;
+        bottom: 0;
+        text-align: center;
+        font-size: 28px;
+        margin-top: 1vh;
+  }
+
+  h1.wow.fadeInUp {
+        padding-top: 10vh;
+  }
+
+  .project {
+      margin-bottom: 8vh;
+  }
+}
