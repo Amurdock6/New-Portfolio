@@ -124,7 +124,7 @@
 
                                           <div class="col-lg-4">
                                                 <p class="wow fadeInUp" data-wow-delay="1.4s">started :</p>
-                                                <h6 class="wow fadeInUp" data-wow-delay="1.5s">January 2023</h6>
+                                                <h6 class="wow fadeInUp" data-wow-delay="1.5s">March 2025</h6>
                                           </div>
 
                                           <div class="col-lg-4">
@@ -134,14 +134,17 @@
                                     </div>
                                     <br>
                                      <p class="wow fadeInUp" data-wow-delay="1.8s">
-                                          The Android Race Dash app originally started when I was having overheating issues with my car and I wanted a way to get more accurate data and data that wasn't even available in the OEM gauges on my 350z.
+                                          <!-- The Android Race Dash app originally started when I was having overheating issues with my car and I wanted a way to get more accurate data and data that wasn't even available in the OEM gauges on my 350z.
                                           
                                           This led me to start development of ARD. The main function of the app is to provide users with a digital dash full of all the features you would expect to find in a modern day digital dash offered by the major car manufacturers. ARD displays all sorts of useful info that you might not have access to normally such as digital gauges that display high res values for almost all major car data points, a Geforce Meter, lap timer, car service interval tracking, car data logging, check engine light, airbag light, abs, and other car troubleshooting diagnoses, maintenance records, 0-60 timer and more. All with an easy to navigate UI that is fully customizable.
                                                                                     
                                           The way ARD works is by gathering data from measurement tools on your device such as the gps, accelerometer, and gyroscope. In order to provide users with real time high res data from their cars ECU we use a OBD-II scanner that the user provides. I also plan on adding support for users that would like to tap directly into their CAN bus in custom raspberry pi 4 applications.    
                                                                               
-                                          ARD is developed using Java, Kotlin, and XML just like most other android apps. Development of this app is still ongoing and the app is very much a work in progress. Though most of the large technical challenges have already been tackled and I use the app every single day on my commute to work and on the weekend at track days and canyon drives. Some of the large technical challenges I faced during development up to this point have been developing a way for the app to interface with the OBD-II scanner, Creating Calculations for the GeForce meter and getting those calculations to accurately display on the UI.
-                                     </p>
+                                          ARD is developed using Java, Kotlin, and XML just like most other android apps. Development of this app is still ongoing and the app is very much a work in progress. Though most of the large technical challenges have already been tackled and I use the app every single day on my commute to work and on the weekend at track days and canyon drives. Some of the large technical challenges I faced during development up to this point have been developing a way for the app to interface with the OBD-II scanner, Creating Calculations for the GeForce meter and getting those calculations to accurately display on the UI. -->
+                                          Android Race Dash began when my 350Z started overheating and the stock gauges weren’t precise enough to diagnose the problem. I built ARD to turn any Android phone into a modern, customizable digital dash for daily driving and track days. It features fully customizable, drag-and-drop dashboards with analog and digital gauges (speed, RPM, coolant temp, horizontal temp bars, compass, G-meter, check-engine indicator, and more), plus unit conversions, thresholds, and rich styling. Beyond display, ARD reads and logs diagnostic trouble codes (powertrain/ABS/airbag), tracks maintenance with reminders and CSV export/printing, supports per-vehicle profiles (VIN, engine, fuel type, tank size, curb weight), and records data sessions for lap days or canyon runs while keeping the screen awake.
+
+                                          Under the hood, ARD connects to a user-supplied OBD-II scanner (Bluetooth/Wi-Fi) and can ingest external USB sensors (e.g., oil pressure via a Pro Micro). It fuses ECU PIDs with onboard GPS, accelerometer, and gyroscope to compute real-time telemetry like G-forces, lap times, and 0–60. Kotlin/Java components process raw streams, apply user-defined thresholds/styles, and render gauges in real time (UI built with XML/Compose). I use the app daily for commuting and at events; development is ongoing with plans for deeper CAN-bus integration and a larger gauge library. Notable challenges I’ve solved include robust OBD-II streaming, accurate G-force/lap timing calculations, and reliable power/sensor management during long sessions.
+                                    </p>
                               </div>
                         </div>
                   </div>
